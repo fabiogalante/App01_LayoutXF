@@ -16,27 +16,25 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Layout\Scroll\" />
-    <Folder Include="Layout\Stack\" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Compile Update="Layout\Absolute\AbsolutePage.xaml.cs">
+    <Compile Update="Layouts\Absolute\AbsolutePage.xaml.cs">
       <DependentUpon>AbsolutePage.xaml</DependentUpon>
     </Compile>
   </ItemGroup>
 
   <ItemGroup>
-    <EmbeddedResource Update="Layout\Absolute\AbsolutePage.xaml">
+    <EmbeddedResource Update="Layouts\Absolute\AbsolutePage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="Layout\Grid\GridPage.xaml">
+    <EmbeddedResource Update="Layouts\Grid\GridPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="Layout\Grid\ScrollPage.xaml">
+    <EmbeddedResource Update="Layouts\Relative\RelativePage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="Layout\Grid\StackPage.xaml">
+    <EmbeddedResource Update="Layouts\Scroll\ScrollPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Layouts\Stack\StackPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
   </ItemGroup>

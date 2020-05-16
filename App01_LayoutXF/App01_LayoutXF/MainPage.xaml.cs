@@ -1,9 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.ComponentModel;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using App01_LayoutXF.Layouts.Relative;
+using App01_LayoutXF.Layouts.Scroll;
 using Xamarin.Forms;
 
 namespace App01_LayoutXF
@@ -16,6 +14,31 @@ namespace App01_LayoutXF
         public MainPage()
         {
             InitializeComponent();
+        }
+
+        private void GoPaginaStack(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new Layouts.Stack.StackPage());
+        }
+
+        private void GoPaginaGrid(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new Layouts.Grid.GridPage());
+        }
+
+        private void GoPaginaAbsolute(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new Layouts.Absolute.AbsolutePage());
+        }
+
+        private void GoPaginaRelative(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new RelativePage());
+        }
+
+        private void GoPaginaScroll(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new ScrollPage());
         }
     }
 }
